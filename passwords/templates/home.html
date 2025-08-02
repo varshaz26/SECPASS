@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="hero d-flex align-items-center" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1>Welcome to SecPass Secure Password Manager</h1>
+                    <h2>Store and manage all your passwords in one secure place.</h2>
+                    <div class="d-md-flex gap-2">
+                        <div class="text-center text-lg-start">
+                            <a href="{% url 'add_password' %}" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Add New Password</span>
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="text-center text-lg-start">
+                            <a href="{% url 'manage_passwords' %}" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>View All Passwords</span>
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img">
+                    <img src="{% static 'image/home.png' %}" alt="Password Manager" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

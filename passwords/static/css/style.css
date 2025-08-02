@@ -1,0 +1,158 @@
+
+.divider::before, 
+.divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.secpass-brand {
+    color: #000000; 
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 700; 
+    font-size: 1.5rem; 
+    text-transform: uppercase; 
+}
+
+body {
+    background-color: rgb(255, 252, 207);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.custom-header {
+    background-color: rgb(255, 252, 207);
+}
+
+
+.login-header {
+    color: #332c3c;
+}
+
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: url(../image/background.png) top center no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b0b0b; 
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-top: 15px;
+    color: #ff679c;
+}
+
+.hero .btn-get-started {
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: white;
+    background-color: #ff679c;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 30px;
+    line-height: 0;
+}
+
+.hero .btn-get-started span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.hero .btn-get-started i {
+    font-size: 18px;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.hero .btn-get-started:hover i {
+    transform: translateX(5px);
+}
+
+.hero .hero-img {
+    text-align: right;
+
+}
+
+.custom-signin-btn {
+    background-color: #ff679c; 
+    color: white; 
+    border: none; 
+    transition: all 0.2s;
+}
+
+.custom-signin-btn:hover {
+    background-color: #e85c8c; 
+    color: white;
+}
+
+.custom-create-btn {
+    background-color: black; 
+    color: white; 
+    border: none; 
+    transition: all 0.3s;
+}
+
+.custom-create-btn:hover {
+    background-color: #333; 
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-attachment: fixed; 
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        padding: 120px 0 60px 0;
+        height: auto;
+    }
+
+    .hero .hero-img {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .hero .hero-img img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero .hero-img img {
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
