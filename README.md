@@ -121,9 +121,9 @@ http://127.0.0.1:8000
 ### 🧪 Testing
 
 Unit tests cover critical features such as:
-  User authentication
-  Password creation, editing, and deletion
-  Search functionalities
+- User authentication
+- Password creation, editing, and deletion
+- Search functionalities
 
 Run tests using:
 
